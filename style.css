@@ -20,38 +20,41 @@ body {
 .container {
     text-align: center;
     background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
     max-width: 500px;
     width: 100%;
 }
 
 /* Logo styling */
 .logo {
-    width: 150px;
+    width: 120px; /* Reduced logo size */
     margin-bottom: 20px;
+    border-radius: 10px; /* Rounded edges for the logo */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the logo */
 }
 
 /* Heading styles */
 h1 {
     color: #007BFF; /* Darker blue for heading */
-    font-size: 28px;
+    font-size: 26px; /* Slightly smaller font size */
     margin-bottom: 10px;
 }
 
 h2 {
     color: #0056b3; /* A medium blue for the slogan */
-    font-size: 20px;
+    font-size: 18px; /* Smaller font size for slogan */
     margin-bottom: 15px;
+    font-weight: normal; /* Normal weight for better readability */
 }
 
 /* Paragraph styles */
 p {
-    color: #333333;
-    font-size: 16px;
+    color: #555555; /* Softer color for paragraph text */
+    font-size: 15px; /* Smaller font size */
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Input field styles */
@@ -85,18 +88,18 @@ input[type="submit"]:hover {
 /* Footer styles */
 footer {
     margin-top: 20px;
-    font-size: 14px;
-    color: #555;
+    font-size: 13px; /* Smaller font size */
+    color: #777;
 }
 
 /* Media query for small screens */
 @media (max-width: 600px) {
     h1 {
-        font-size: 24px;
+        font-size: 22px; /* Smaller font size on mobile */
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 16px; /* Smaller font size on mobile */
     }
 
     p {

@@ -6,9 +6,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* Center the container in the middle of the page */
+/* Center the container in the middle of the page with an ice blue background */
 body {
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* Ice blue background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,13 +35,13 @@ body {
 
 /* Heading styles */
 h1 {
-    color: #1a1a1a;
+    color: #007BFF; /* Darker blue for heading */
     font-size: 28px;
     margin-bottom: 10px;
 }
 
 h2 {
-    color: #007BFF;
+    color: #0056b3; /* A medium blue for the slogan */
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -86,7 +86,7 @@ input[type="submit"]:hover {
 footer {
     margin-top: 20px;
     font-size: 14px;
-    color: #777;
+    color: #555;
 }
 
 /* Media query for small screens */

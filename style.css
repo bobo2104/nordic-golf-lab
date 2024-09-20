@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 10px;
 }
 
 /* Style for the main container */
@@ -23,7 +24,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    width: 90%;
+    width: 100%;
 }
 
 /* Logo styling */
@@ -49,7 +50,7 @@ p {
 /* Input field styles */
 input[type="email"] {
     padding: 10px;
-    width: 80%;
+    width: 90%;
     max-width: 300px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -79,4 +80,28 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #777;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }

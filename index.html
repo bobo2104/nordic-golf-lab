@@ -35,13 +35,16 @@
         }
         #mc_embed_signup h2 {
             color: #007BFF;
-            font-size: 22px;
-            margin-bottom: 10px;
+            font-size: 24px; /* Increase the font size for visibility */
+            font-weight: bold; /* Make the heading bold */
+            margin-bottom: 15px;
+            text-align: center; /* Center align the heading */
         }
         #mc_embed_signup p {
             color: #333;
             font-size: 16px;
             margin-bottom: 20px;
+            text-align: center; /* Center align the subheading */
         }
         #mc_embed_signup .mc-field-group label {
             display: block;
@@ -55,12 +58,21 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             margin-bottom: 10px;
+            font-size: 14px; /* Ensure text size is consistent */
+        }
+        .mc-field-group.birthday-field {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mc-field-group.birthday-field input[type="text"] {
+            width: 48%;
+            display: inline-block;
         }
         #mc_embed_signup .button {
             background-color: #007BFF;
             border: none;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px; /* Adjust padding for better appearance */
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -68,6 +80,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin-top: 10px; /* Add some space above the button */
+            width: 100%; /* Make the button span the width */
         }
         #mc_embed_signup .button:hover {
             background-color: #0056b3;
@@ -76,6 +90,12 @@
             margin-top: 10px;
             font-size: 14px;
             color: green;
+        }
+        .asterisk {
+            color: #FF0000; /* Red color for required asterisk */
+        }
+        .indicates-required {
+            text-align: right; /* Align indicates-required text to the right */
         }
     </style>
 </head>
@@ -102,6 +122,16 @@
                     <div class="mc-field-group">
                         <label for="mce-LNAME">Last Name </label>
                         <input type="text" name="LNAME" class="text" id="mce-LNAME" value="">
+                    </div>
+                    <div class="mc-field-group birthday-field">
+                        <div class="birthday-subfield">
+                            <label for="mce-BIRTHDAY-month">Birth Month</label>
+                            <input type="text" pattern="[0-9]*" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" placeholder="MM" maxlength="2">
+                        </div>
+                        <div class="birthday-subfield">
+                            <label for="mce-BIRTHDAY-day">Birth Day</label>
+                            <input type="text" pattern="[0-9]*" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" placeholder="DD" maxlength="2">
+                        </div>
                     </div>
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display: none;"></div>

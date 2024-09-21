@@ -16,20 +16,32 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px; /* Add some padding to body for better spacing */
+        }
+        .form-wrapper {
+            background-color: #e0f7fa; /* Ice blue background around the form */
+            padding: 40px; /* Padding to create space around the form */
+            border-radius: 15px; /* Rounded corners for the wrapper */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            max-width: 600px; /* Limit the width of the entire form area */
+            width: 100%;
         }
         #mc_embed_signup {
-            background: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
+            background: #fff; /* White background for the form itself */
+            padding: 20px; /* Inner padding for the form */
+            border-radius: 10px; /* Rounded corners for the form */
+            border: 1px solid #ccc; /* Light border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the form */
         }
         #mc_embed_signup h2 {
             color: #007BFF;
             font-size: 22px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+        }
+        #mc_embed_signup p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         #mc_embed_signup .mc-field-group label {
             display: block;
@@ -68,41 +80,46 @@
     </style>
 </head>
 <body>
-    <!-- Mailchimp Signup Form -->
-    <div id="mc_embed_signup">
-        <form action="https://nordicgolflab.us11.list-manage.com/subscribe/post?u=5b1d5063377a20c27201d94ab&amp;id=3044351748&amp;f_id=00b20de1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-            <div id="mc_embed_signup_scroll">
-                <h2>Subscribe to The Nordic Golf Lab</h2>
-                <div class="indicates-required">
-                    <span class="asterisk">*</span> indicates required
+    <!-- Form Wrapper with Ice Blue Background -->
+    <div class="form-wrapper">
+        <!-- Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="https://nordicgolflab.us11.list-manage.com/subscribe/post?u=5b1d5063377a20c27201d94ab&amp;id=3044351748&amp;f_id=00b20de1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll">
+                    <h2>Subscribe to The Nordic Golf Lab</h2>
+                    <p>Master the game we all love, one swing at a time.</p>
+                    <div class="indicates-required">
+                        <span class="asterisk">*</span> indicates required
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">First Name </label>
+                        <input type="text" name="FNAME" class="text" id="mce-FNAME" value="">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Last Name </label>
+                        <input type="text" name="LNAME" class="text" id="mce-LNAME" value="">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <!-- Anti-spam hidden field -->
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_5b1d5063377a20c27201d94ab_3044351748" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                    </div>
                 </div>
-                <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" name="FNAME" class="text" id="mce-FNAME" value="">
-                </div>
-                <div class="mc-field-group">
-                    <label for="mce-LNAME">Last Name </label>
-                    <input type="text" name="LNAME" class="text" id="mce-LNAME" value="">
-                </div>
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                </div>
-                <!-- Anti-spam hidden field -->
-                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                    <input type="text" name="b_5b1d5063377a20c27201d94ab_3044351748" tabindex="-1" value="">
-                </div>
-                <div class="clear">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
+        <!-- End mc_embed_signup -->
     </div>
-    <!-- End mc_embed_signup -->
+    <!-- End Form Wrapper -->
     <!-- Include jQuery and Mailchimp's Validation Script -->
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script type="text/javascript">
